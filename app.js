@@ -2,7 +2,7 @@ var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 
 context.fillStyle = 'orange';
-context.fillRect(125,50,200,200);
+context.fillRect(125,50,175,175);
 
 context.beginPath();
 context.strokeStyle = 'red';
@@ -23,3 +23,15 @@ var padding = 10;
 
 context.fillStyle = 'green';
 context.fillRect(canvasWidth - size - padding, canvasHeight - size - padding , size, size);
+
+var positionX = canvasWidth / 2 - size * 0.75;
+var positionY = canvasHeight / 2 - size * 0.75;
+
+context.fillStyle = 'rgba(255,0,0,.5)';
+context.fillRect(positionX, positionY, size, size);
+
+positionX += size / 2;
+positionY += size / 2;
+
+context.fillStyle = 'rgba(0,0,255,.5)';
+context.fillRect(positionX, positionY, size, size);
