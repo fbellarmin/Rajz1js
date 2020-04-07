@@ -2,7 +2,7 @@ var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 
 context.fillStyle = 'orange';
-context.fillRect(125,50,175,175);
+context.fillRect(150,75,150,150);
 
 context.beginPath();
 context.strokeStyle = 'red';
